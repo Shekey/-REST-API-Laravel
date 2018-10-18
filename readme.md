@@ -7,6 +7,22 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
+## Commands used
+- Create laravel project [composer create-project --prefer-dist nameOfAppFolder]
+- Create migration [php artisan make:migration create_articles_table --create=articles]
+- In Seeder folder add TableSeeder [php artisan make:seeder ArticlesTableSeeder]
+- Generate factory [php artisan make:factory ArticleFactory]
+- Than add a model [ php artisan make:model Article]
+- Migrate [php artisan migrate]
+- In ArticleFactory change Model wiht App\Article to work 
+- To do seed of data type [php artisan db:seed]
+- Now  u should have some data in table Article
+- Create controller [php artisan make:controller ArticleController --resource]
+- Add all routes than create resource [php artisan make:resource Article] http->resource-article.php created
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
